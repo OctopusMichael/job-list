@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+  .container {
+    @apply  md:max-w-[1250px] mx-auto
+  }
+}
+
+
+body{
+  background: #f0fafb;
+}
+
+header{
+  background-image: url("/images/bg-header-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* / Small Devices, Tablets / */
+@media only screen and (min-width : 768px) {
+  
+  header{
+    background-image: url("/images/bg-header-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+ 
+}
